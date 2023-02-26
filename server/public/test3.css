@@ -1,0 +1,116 @@
+﻿
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+  }
+  
+  
+.productimg {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .productrow {
+    padding-top: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .size:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 1)
+    );
+    color: black;
+  }
+  
+  .add:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 1)
+    );
+    color: black;
+  }
+  
+  .size {
+    display: inline-block;
+    text-align: center;
+    font-family: "BNR";
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 180px;
+  }
+  
+  .sizes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 30px;
+    height: auto;
+  }
+  
+  .price {
+    padding-left: 15px;
+    font-size: 20px;
+    height: auto;
+    top: 100px;
+    display: inline-block;
+    font-family: "BNR";
+  }
+  
+  .add {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+  
+    font-family: "BNR";
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .from-left {
+    grid-column: 2 / 3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  .from-right {
+    grid-column: 3 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
